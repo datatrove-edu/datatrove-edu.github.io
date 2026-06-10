@@ -1,5 +1,5 @@
 ---
-title: "Gangnman style viral video"
+title: "Gangnam style viral video"
 date: 2025-09-25
 type: "entry"
 banner: "banner.jpg" 
@@ -7,7 +7,7 @@ banner_ref: "Image generated with AI (Nano Banana)."
 
 functions: ["exponential"]
 topics: ["viral", "social media"]
-tags: ["Gangnman", "YouTube"]
+tags: ["Gangnam", "YouTube"]
 ---
 
 Viral music video from Corea. Total number of YouTube views was initially exponential, growing around 4.89% per day. 

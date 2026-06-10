@@ -5,10 +5,10 @@ type: "entry"
 banner: "christmasMovie.jpg" 
 banner_ref: "Image generated with AI (nano banana)" 
 
-functions: ["exponential"]
-math_topics: ["data", "curve fitting", "modeling"]
-# topics: ["data", "data fitting", "modeling"]
-tags: ["movies", "Christmas"]
+functions: ["Exponential"]
+math_topics: ["Curve fitting", "Modeling"]
+# topics: ["data", "data fitting", "Modeling"]
+tags: ["Movies", "Christmas"]
 ---
 
 The number of feature films and TV movies with "Christmas" in the title doubled from 2011 to 2016, and doubled again from 2016 to 2021.

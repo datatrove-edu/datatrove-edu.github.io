@@ -5,10 +5,10 @@ type: "entry"
 banner: "Radiocarbon_bomb_spike.svg" 
 banner_ref: "Image from [wikipedia](https://en.wikipedia.org/wiki/Bomb_pulse#/media/File:Radiocarbon_bomb_spike.svg)" 
 
-functions: ["surge"]
-math_topics: ["data", "curve fitting", "modeling"]
-# topics: ["data", "curve fitting", "modeling"]
-tags: ["nuclear bombs"]
+functions: ["Surge"]
+math_topics: ["Curve fitting", "Modeling"]
+# topics: ["data", "Curve fitting", "Modeling"]
+tags: ["Nuclear bombs"]
 ---
 
 Sudden increase of carbon-14 from nuclear tests up to 1963. The atmospheric level has since decayed exponentially. 

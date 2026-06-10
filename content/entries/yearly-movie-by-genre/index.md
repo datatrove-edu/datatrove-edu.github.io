@@ -1,14 +1,14 @@
 ---
-title: "Yearly movies grows different for each genre"
+title: "Exponential growth of yearly movies"
 date: 2025-09-19
 type: "entry"
 banner: "" 
 banner_ref: "" 
 
-functions: ["exponential"]
-math_topics: ["data", "curve fitting", "modeling"]
-# topics: ["data", "data fitting", "modeling"]
-tags: ["movies"]
+functions: ["Exponential"]
+math_topics: ["Curve fitting", "Modeling"]
+# topics: ["data", "data fitting", "Modeling"]
+tags: ["Movies"]
 ---
 
 Number of yearly movies by genre growing exponentially for many genres, and rate is different for each genre.

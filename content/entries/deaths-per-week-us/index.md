@@ -4,9 +4,9 @@ date: 2026-02-25
 type: "entry"
 # banner: "TucsonHeat.jpg" 
 # banner_ref: "Picture from [Wikipedia](https://commons.wikimedia.org/wiki/File:Saguaro_Sunset.jpg), CC-BY 3.0" 
-functions: ["trigonometric"]
-topics: ["public health"]
-tags: ["cancer", "heart disease"]
+functions: ["Trigonometric"]
+topics: ["Public health"]
+tags: ["Cancer", "Heart disease"]
 ---
 
 The historical data of deaths per week of the year are sinusoidal for many causes of death. They vary by season with peaks in winter and troughs in summer. 

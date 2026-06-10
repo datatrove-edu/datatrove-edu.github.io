@@ -4,9 +4,9 @@ date: 2026-05-18
 type: "entry"
 # banner: "TucsonHeat.jpg" 
 # banner_ref: "Picture from [Wikipedia](https://commons.wikimedia.org/wiki/File:Saguaro_Sunset.jpg), CC-BY 3.0" 
-functions: ["several function families at once"]
-topics: ["public health"]
-tags: ["cause of death", "cancer", "heart disease", "Infectious & parasitic diseases", "Blood & immune disorders"]
+functions: ["Several function families at once"]
+topics: ["Public health"]
+tags: ["Cause of death", "Cancer", "Heart disease", "Infectious & parasitic diseases", "Blood & immune disorders"]
 ---
 Data for deaths per thousand people in the US at each age for all causes of death during 2018–2024. 
  

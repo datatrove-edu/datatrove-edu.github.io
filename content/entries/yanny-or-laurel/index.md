@@ -5,8 +5,8 @@ type: "entry"
 banner: "banner.jpg" 
 banner_ref: "Image generated with nano banana." 
 
-functions: ["surge"]
-topics: ["viral", "social media"]
+functions: ["Surge"]
+topics: ["Viral", "Social media"]
 tags: ["Yanny or Laurel", "Audio illusion"]
 ---
 

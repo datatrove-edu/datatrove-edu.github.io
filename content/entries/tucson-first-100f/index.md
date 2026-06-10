@@ -5,9 +5,9 @@ type: "entry"
 banner: "TucsonHeat.jpg" 
 banner_ref: "Picture from [Wikipedia](https://commons.wikimedia.org/wiki/File:Saguaro_Sunset.jpg), CC-BY 3.0" 
 
-functions: ["linear"]
-topics: ["climate change"]
-tags: ["ice-break", "Tucson"]
+functions: ["Linear"]
+topics: ["Climate change"]
+tags: ["Ice break", "Tucson"]
 ---
 
 The first day temperature goes over 100 °F at Tucson Airport each year is falling about **1 day earlier per decade**.

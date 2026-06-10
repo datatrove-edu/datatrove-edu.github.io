@@ -4,9 +4,9 @@ date: 2026-05-25
 type: "entry"
 # banner: "TucsonHeat.jpg" 
 # banner_ref: "Picture from [Wikipedia](https://commons.wikimedia.org/wiki/File:Saguaro_Sunset.jpg), CC-BY 3.0" 
-functions: ["exponential"]
-topics: ["finance"]
-tags: ["stocks", "investment"]
+functions: ["Exponential"]
+topics: ["Finance"]
+tags: ["Stocks", "Investment"]
 ---
 
 The Dow Jones Industrial Average has grown approximately exponential for many decades.

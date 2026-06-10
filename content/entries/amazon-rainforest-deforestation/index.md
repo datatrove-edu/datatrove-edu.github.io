@@ -5,7 +5,7 @@ type: "entry"
 banner: "banner-screenshotAmazonDeforestation.png" 
 banner_ref: "Screenshot of a map at [TerraBrasilis/INPE](https://terrabrasilis.dpi.inpe.br/app/dashboard/deforestation/biomes/legal_amazon/rates)" 
 math_topics: ["Optimization", "Integration"]
-topics: ["deforestation"]
+topics: ["Deforestation"]
 tags: ["Amazon rainforest"]
 ---
 

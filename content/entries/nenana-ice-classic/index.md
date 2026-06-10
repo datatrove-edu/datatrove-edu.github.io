@@ -5,8 +5,8 @@ type: "entry"
 banner: "Tanana_River_in_Nenana.jpg" 
 banner_ref: "By Frank K. from Anchorage, Alaska, USA, CC BY 2.0, https://commons.wikimedia.org/w/index.php?curid=3741189" 
 
-functions: ["linear"]
-topics: ["climate change"]
+functions: ["Linear"]
+topics: ["Climate change"]
 tags: ["Ice Classic", "Alaska"]
 ---
 

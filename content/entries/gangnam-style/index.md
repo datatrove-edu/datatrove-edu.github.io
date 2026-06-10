@@ -5,8 +5,8 @@ type: "entry"
 banner: "banner.jpg" 
 banner_ref: "Image generated with AI (Nano Banana)." 
 
-functions: ["exponential"]
-topics: ["viral", "social media"]
+functions: ["Exponential"]
+topics: ["Viral", "Social media"]
 tags: ["Gangnam", "YouTube"]
 ---
 

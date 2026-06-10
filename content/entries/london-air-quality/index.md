@@ -5,7 +5,7 @@ type: "entry"
 banner: "banner_NOx_2022_crop.jpg" 
 banner_ref: "Image from London Datastore at [data.london.gov.uk](https://data.london.gov.uk/dataset/london-atmospheric-emissions-inventory-laei-2022-2lg5g/). " 
 math_topics: ["Riemann sums for 2 variable functions"]
-topics: ["air quality", "concentration map"]
+topics: ["Air quality", "Concentration map"]
 tags: ["London"]
 ---
 

@@ -5,10 +5,10 @@ type: "entry"
 banner: "CherryBlossoms.jpg" 
 banner_ref: "Photo by Bagus Pangestu downloaded from [pexels](https://www.pexels.com/photo/after-the-rain-cherry-blossom-cherry-blossoms-japan-1483894/), free to use license" 
 
-functions: ["linear"]
-math_topics: ["curve fitting", "modeling"]
-topics: ["climate change", "data"]
-tags: ["cherry blossoms", "Japan"]
+functions: ["Linear"]
+math_topics: ["Curve fitting", "Modeling"]
+topics: ["Climate change"]
+tags: ["Cherry blossoms", "Japan"]
 ---
 
 Data for full flowering date for cherry trees at Kyoto since 9th century shows it is happening about 4 days earlier every 70 years.

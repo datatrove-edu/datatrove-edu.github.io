@@ -5,10 +5,10 @@ type: "entry"
 banner: "zipfBanner.jpg" 
 banner_ref: "Image generated with AI (nano banana)" 
 
-functions: ["power"]
-math_topics: ["curve fitting", "modeling", "data"]
-topics: ["demographics"]
-tags: ["population", "Zipf"]
+functions: ["Power"]
+math_topics: ["Curve fitting", "Modeling"]
+topics: ["Demographics"]
+tags: ["Population", "Zipf"]
 ---
 
 In a given country, the population of a city is inversely proportional to a power of the city's rank by size in the country:

@@ -4,8 +4,8 @@ date: 2026-05-27
 type: "entry"
 # banner: "cherryBlossomsNano.jpg" 
 # banner_ref: "Image generated with AI (nano banana)" 
-# functions: ["moving average"]
-topics: ["climate change", "data"]
+# functions: ["Moving average"]
+topics: ["Climate change"]
 tags: ["Lake Mead"]
 ---
 

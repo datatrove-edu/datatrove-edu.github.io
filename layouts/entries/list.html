@@ -1,0 +1,87 @@
+{{ define "main" }}
+<main class="container">
+  <h1>{{ .Title }}</h1>
+
+  {{ with site.Taxonomies.tags }}
+    <div class="tagbar">
+      {{ range $name, $pages := . }}
+        {{ $slug := urlize $name }}
+        {{ $term := site.GetPage (printf "tags/%s" $slug) | default (site.GetPage (printf "/tags/%s" $slug)) }}
+        <a class="tag-chip" href="{{ if $term }}{{ $term.RelPermalink }}{{ else }}{{ printf "/tags/%s/" $slug }}{{ end }}">
+          {{ $name }} ({{ len $pages }})
+        </a>
+      {{ end }}
+    </div>
+  {{ end }}
+
+
+  {{ $paginator := .Paginate (where .Pages "Type" "entry") }}
+
+  <div class="grid">
+    {{ range $paginator.Pages }}
+      {{ $page := . }}
+      <article class="card">
+
+        {{ partial "card-banner.html" $page }}
+
+        <h2 class="card-title"><a href="{{ $page.RelPermalink }}">{{ $page.Title }}</a></h2>
+
+        {{/* --- Meta: functions + topics --- */}}
+        <div class="meta-card">
+          {{ with $page.Params.functions }}
+            <dl class="meta-row">
+              <dt>Function family:</dt>
+              <dd class="card-chips">
+                {{ range . }}
+                  {{ $t := . }}{{ $slug := urlize $t }}
+                  {{ $term := site.GetPage (printf "functions/%s" $slug) | default (site.GetPage (printf "/functions/%s" $slug)) }}
+                  <a class="card-chip" href="{{ $term.RelPermalink | default (printf "/functions/%s/" $slug) }}">{{ $t }}</a>
+                {{ end }}
+              </dd>
+            </dl>
+          {{ end }}
+
+          {{ with $page.Params.math_topics }}
+            <dl class="meta-row">
+              <dt>Math topic:</dt>
+              <dd class="card-chips">
+                {{ range . }}
+                  {{ $t := . }}{{ $slug := urlize $t }}
+                  {{ $term := site.GetPage (printf "math_topics/%s" $slug) | default (site.GetPage (printf "/math_topics/%s" $slug)) }}
+                  <a class="card-chip" href="{{ $term.RelPermalink | default (printf "/math_topics/%s/" $slug) }}">{{ $t }}</a>
+                {{ end }}
+              </dd>
+            </dl>
+          {{ end }}
+
+          {{ with $page.Params.topics }}
+            <dl class="meta-row">
+              <dt>Topic:</dt>
+              <dd class="card-chips">
+                {{ range . }}
+                  {{ $t := . }}{{ $slug := urlize $t }}
+                  {{ $term := site.GetPage (printf "topics/%s" $slug) | default (site.GetPage (printf "/topics/%s" $slug)) }}
+                  <a class="card-chip" href="{{ $term.RelPermalink | default (printf "/topics/%s/" $slug) }}">{{ $t }}</a>
+                {{ end }}
+              </dd>
+            </dl>
+          {{ end }}
+
+        </div>   
+
+        {{/* Summary only; strip inline images */}}
+        {{ $sum := $page.Summary }}
+        {{ $sum = replaceRE `<figure[\s\S]*?</figure>` `` $sum }}
+        {{ $sum = replaceRE `<img[^>]*>` `` $sum }}
+        <div class="summary">{{ $sum | safeHTML }}</div>
+
+        <p class="more"><a href="{{ $page.RelPermalink }}">Read more →</a></p>
+      </article>
+    {{ end }}
+  </div>
+
+  {{ template "_internal/pagination.html" . }}
+
+
+</main>
+{{ end }}

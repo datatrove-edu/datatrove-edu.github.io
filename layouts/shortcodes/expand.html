@@ -1,0 +1,29 @@
+{{/* 
+  Shortcode: expand.html
+
+  Usage:
+    {{< expand title="other editions" >}}
+    prob 26 in 6th, 5th edition, review problem 65 in 4th edition
+    {{< /expand >}}
+
+  What it does:
+    - Renders inline text like: (other editions)
+    - Clicking "(other editions)" expands to show the extra text inline.
+    - The `title` param changes the clickable text (default: "other editions").
+    - The inner block is the hidden content that appears after expansion.
+
+  Notes:
+    - Uses <details>/<summary>, which works in all modern browsers.
+    - Wrapped in parentheses automatically.
+*/}}
+
+{{- $title := .Get "title" | default "other editions" -}}
+{{- $inner := .Inner | markdownify -}}
+{{- $inner = replaceRE "^<p>(.*)</p>$" "$1" $inner -}}
+
+<details style="display:inline;">
+  <summary style="display:inline; cursor:pointer; list-style:none; color:#4a74c9;">
+    ({{ $title }})
+  </summary>
+  <span style="display:inline;">{{ $inner | safeHTML }}</span>
+</details>

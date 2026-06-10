@@ -1,0 +1,61 @@
+{{ define "main" }}
+<main class="container">
+  <article class="entry">
+    <h1>{{ .Title }}</h1>
+    <div class="meta-entry">
+      <p>
+        <strong>Tags:</strong>
+        {{ with .Params.tags }}
+          {{ range . }}
+            {{ $slug := urlize . }}
+            {{ $tag := site.GetPage (printf "tags/%s" $slug) }}
+            <a class="tag-chip" href="{{ $tag.RelPermalink }}">{{ . }}</a>
+          {{ end }}
+        {{ end }}
+      </p>
+      <p>
+        {{ with .Params.functions }}
+          <strong>Function family:</strong>
+          {{ range . }}
+            {{ $slug := urlize . }}
+            {{ $term := site.GetPage (printf "functions/%s" $slug) }}
+            <a class="tag-chip" href="{{ $term.RelPermalink }}">{{ . }}</a>
+          {{ end }}
+        {{ end }}
+
+        {{ with .Params.math_topics }}
+          <strong>Math topic:</strong>
+          {{ range . }}
+            {{ $slug := urlize . }}
+            {{ $term := site.GetPage (printf "math_topics/%s" $slug) }}
+            <a class="tag-chip" href="{{ $term.RelPermalink }}">{{ . }}</a>
+          {{ end }}
+        {{ end }}
+        
+        {{ with .Params.topics }}
+          <strong>Topic:</strong>
+          {{ range . }}
+            {{ $slug := urlize . }}
+            {{ $term := site.GetPage (printf "topics/%s" $slug) }}
+            <a class="tag-chip" href="{{ $term.RelPermalink }}">{{ . }}</a>
+          {{ end }}
+        {{ end }}
+      </p>
+    </div>
+    {{ with .Params.banner }}
+      {{ $res := $.Resources.GetMatch . }}
+      {{ with $.Params.banner_ref }}
+        <div class="banner-ref">{{ . | markdownify }}</div>
+      {{ end }}
+      {{ if $res }}
+        <img class="entry-banner" src="{{ $res.RelPermalink }}" alt="{{ $.Title }}">
+      {{ else }}
+        <img class="entry-banner" src="{{ . }}" alt="{{ $.Title }}">
+      {{ end }}
+    {{ end }}
+    <div class="content">
+      {{ .Content }}
+    </div>
+  </article>
+</main>
+{{ end }}

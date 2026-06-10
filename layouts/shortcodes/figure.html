@@ -1,0 +1,36 @@
+{{- $src     := .Get "src" -}}
+{{- $alt     := .Get "alt"     | default "" -}}
+{{- $caption := .Get "caption" | default "" -}}
+{{- $title   := .Get "title"   | default "" -}}
+{{- $class   := .Get "class"   | default "" -}}
+{{- $width   := .Get "width"   | default "" -}}
+{{- $height  := .Get "height"  | default "" -}}
+{{- $link    := .Get "link"    | default "" -}}
+{{- $target  := .Get "target"  | default "" -}}
+{{- $rel     := .Get "rel"     | default "" -}}
+{{- $attr    := .Get "attr"    | default "" -}}
+{{- $attrlink := .Get "attrlink" | default "" -}}
+<figure{{ with $class }} class="{{ . }}"{{ end }}>
+  {{- if $link -}}
+  <a href="{{ $link }}"{{ with $target }} target="{{ . }}"{{ end }}{{ with $rel }} rel="{{ . }}"{{ end }}>
+  {{- else -}}
+  <a class="lightbox-trigger" href="{{ $src }}" data-caption="{{ $caption }}">
+  {{- end -}}
+    <img src="{{ $src }}"
+      {{- with $alt }} alt="{{ . }}"{{ end -}}
+      {{- with $title }} title="{{ . }}"{{ end -}}
+      {{- with $width }} width="{{ . }}"{{ end -}}
+      {{- with $height }} height="{{ . }}"{{ end -}}
+    >
+  </a>
+  {{- if or $caption $attr -}}
+  <figcaption>
+    {{- with $caption }}<p>{{ . | markdownify }}</p>{{ end -}}
+    {{- if and $attr $attrlink -}}
+    <p><a href="{{ $attrlink }}">{{ $attr | markdownify }}</a></p>
+    {{- else if $attr -}}
+    <p>{{ $attr | markdownify }}</p>
+    {{- end -}}
+  </figcaption>
+  {{- end -}}
+</figure>

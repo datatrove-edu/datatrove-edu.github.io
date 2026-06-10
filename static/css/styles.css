@@ -1,0 +1,441 @@
+/* ==============================
+   Global Variables (design tokens)
+   ============================== */
+:root {
+  --bg:#f7f7f8;      /* Page background color */
+  --card:#fff;       /* Card/container background */
+  --border:#e6e6e6;  /* Border color */
+  --text:#222;       /* Primary text color */
+  --muted:#666;      /* Secondary/muted text color */
+}
+
+/* ==============================
+   Reset & Base
+   ============================== */
+* { box-sizing:border-box; } /* Include padding & border in element width */
+
+body {
+  margin:0;
+  font:16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial, sans-serif;
+  background:var(--bg);
+  color:var(--text);
+}
+
+/* ==============================
+   Header & Navigation
+   ============================== */
+header {
+  position:sticky;                 /* Sticks to top while scrolling */
+  top:0;
+  z-index:50;                      /* Above page content */
+  background:rgba(255,255,255,.8); /* Subtle translucency */
+  backdrop-filter:saturate(180%) blur(8px); /* Frosted glass effect */
+  border-bottom:1px solid var(--border);
+}
+
+.wrap {
+  max-width:1060px;
+  margin:0 auto;
+  padding:14px;
+}
+
+.brand { font-weight:700; }        /* Site title bold */
+
+/* Nav links stay neutral/dark to differentiate from content links */
+nav a {
+  margin-right:10px;
+  text-decoration:none;
+  color:#333;
+}
+
+/* ==============================
+   Main & Footer
+   ============================== */
+main.container {
+  max-width:1060px;
+  margin:0 auto;
+  padding:16px;
+}
+
+footer {
+  color:var(--muted);
+  text-align:center;
+  padding:32px 16px;
+}
+
+/* ==============================
+   Tags & Tag Bar
+   ============================== */
+.tag-chip {
+ display: inline-block;
+ line-height: 1;
+ padding: .25rem .5rem;
+ border-radius: 999px;
+ border: 1px solid var(--border);
+ background: #fff;
+ text-decoration: none;
+ color: #4a74c9;           /* matches your link color */
+ font-size: .80rem;
+ font-weight: 500;
+}
+.tag-chip:visited { color: #4a74c9; }
+.tag-chip:hover   { background: #f6f8ff; border-color: #dfe4ee; }
+.tag-chip:active  { background: #eef2ff; border-color: #cfd7ea; }
+
+.tagbar {
+  display:flex;
+  flex-wrap:wrap;
+  gap:.5rem;
+  margin:.5rem 0 1rem;
+}
+
+/* ==============================
+   Grid & Cards (used on list pages too)
+   ============================== */
+.grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fill, minmax(280px, 1fr));
+  gap:1rem;
+}
+
+.card {
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:14px;
+}
+
+.card-title {
+  margin: .0rem 0 .45rem;   
+  font-size: 1.4rem;
+  line-height: 1.3;
+}
+
+
+/* ==============================
+   List Page: Card Banner Image
+   (replaces inline styles in list.html)
+   ============================== */
+.card-banner {
+  width:100%;
+  height:160px;          /* Crops to uniform height */
+  object-fit:cover;      /* Fill while preserving aspect ratio */
+  border-radius:10px;
+  margin-bottom:.5rem;
+}
+
+/* ==============================
+   Entries
+   ============================== */
+.entry {
+/*  max-width:860px; */
+/*  margin:0 auto;*/
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:14px;
+}
+
+.entry h1 {
+  font-size: 2.3rem;
+  line-height: normal;
+  margin-top: 0.4rem;
+}
+
+
+/* ==============================
+   Meta rows & pills (list pages)
+   ============================== */
+/* Container just stacks rows */
+.meta-card {
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;               /* tight spacing between rows */
+  margin: 0 0 .5rem;         /* bottom spacing to summary */
+  font-size: .92rem;
+}
+
+/* Each row is its own 2-col grid: [label][chips] */
+.meta-row {
+ display: grid;
+ grid-template-columns: max-content 1fr; /* label hugs, chips fill */
+ column-gap: .3rem;                      /* tiny, consistent space */
+ align-items: start;
+ margin: 0.2rem;            /* ← reset UA dl margins */
+ padding: 0;           /* (optional) */
+}
+
+/* reset dl default margins */
+.meta-row > dt, .meta-row > dd { margin: 0; }
+
+/* make labels bold and darker */
+.meta-row > dt {
+  font-weight: 600;     /* adds weight */
+  color: var(--muted);   /* overrides inherited muted color */
+}
+
+/* chips wrap nicely */
+.card-chips {
+ display: flex;
+ flex-wrap: wrap;
+ gap: .35rem;
+}
+
+/* calmer, compact chip */
+.card-chip {
+ display: inline-block;
+ line-height: 1;
+ padding: .25rem .5rem;
+ border-radius: 999px;
+ border: 1px solid var(--border);
+ background: #fff;
+ text-decoration: none;
+ color: #4a74c9;           /* matches your link color */
+ font-size: .80rem;
+ font-weight: 500;
+}
+.card-chip:visited { color: #4a74c9; }
+.card-chip:hover   { background: #f6f8ff; border-color: #dfe4ee; }
+.card-chip:active  { background: #eef2ff; border-color: #cfd7ea; }
+
+/* Mobile: stack label above chips if space is tight (optional) */
+@media (max-width: 560px) {
+ .meta-row {
+   grid-template-columns: 1fr;
+   row-gap: .25rem;
+ }
+}
+
+/* Hooks available for specialized tag styles if desired */
+.tag-fn {}
+.tag-topic {}
+
+/* ==============================
+   Content
+   ============================== */
+.summary img,
+.summary figure {
+  display:none; /* Hide images in summaries on list pages */
+}
+
+.content img {
+  max-width:100%;
+  height:auto;
+  border-radius:10px;
+  border:1px solid var(--border);
+}
+
+.content blockquote {
+  margin: .25rem 0;
+  padding: .25rem 1rem;
+  border-left: 3px solid var(--border);   /* ← the line */
+  color: var(--muted);                    /* optional: softer text */
+/*  background: #f9fafb;                    /* optional: subtle panel */
+}
+
+.content blockquote p { margin: .1rem 0; }  /* tidy inner spacing */
+
+/* ==============================
+   Links (muted blue, no purple visited)
+   ============================== */
+a {
+  color:#4a74c9;           /* Muted blue for all content links */
+  text-decoration:none;
+}
+
+a:visited {
+  color:#4a74c9;           /* Prevent default purple */
+}
+
+a:hover {
+  color:#3457a1;           /* Slightly darker on hover */
+  text-decoration:underline;
+}
+
+a:active {
+  color:#2d4a8a;           /* Darkest while clicking */
+}
+
+/* ==============================
+   Image captions
+   ============================== */
+
+/* padding*/
+figcaption p {
+  margin-top: -0.2rem;
+  margin-left: 0rem;
+  padding: 0.0rem;
+}
+/* align image and caption to center */
+figure { 
+  text-align: center; /* centers image because it's inline by default */
+}
+
+/* alternate without center align and right align of captions */
+/*figure { 
+  display: inline-block; 
+}
+figure figcaption {
+  text-align: center;
+}*/
+
+
+/* ==============================
+   Entry: Banner Image & Attribution
+   ============================== */
+.entry-banner {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin: 1rem 0;
+}
+
+.banner-ref {
+  font-size: 0.8rem;
+  color: #777;
+  text-align: right;
+  margin-top: 0;
+  margin-bottom: -1rem;
+}
+
+/* ==============================
+   Lightbox Modal
+   ============================== */
+#lightbox-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, .85);
+  backdrop-filter: blur(4px);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+#lightbox-modal.active {
+  display: flex;
+}
+
+#lightbox-img {
+  max-width: 90vw;
+  max-height: 85vh;
+  border-radius: 8px;
+  object-fit: contain;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, .6);
+  background: #fff;
+}
+
+#lightbox-caption {
+  color: #eee;
+  font-size: .9rem;
+  margin-top: .75rem;
+  text-align: center;
+  max-width: 70ch;
+}
+
+#lightbox-close {
+  position: fixed;
+  top: 1rem;
+  right: 1.25rem;
+  background: rgba(255, 255, 255, .15);
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  line-height: 1;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background .15s;
+}
+
+#lightbox-close:hover {
+  background: rgba(255, 255, 255, .3);
+}
+
+/* Zoom cursor on clickable figures */
+.lightbox-trigger {
+  cursor: zoom-in;
+  display: inline-block;
+}
+
+/* ==============================
+   Pagination
+   ============================== */
+.pagination {
+  list-style: none;
+  margin: 1.5rem 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .35rem;
+  justify-content: center;
+}
+
+.page-item .page-link {
+  display: inline-block;
+  padding: .3rem .7rem;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: #4a74c9;
+  text-decoration: none;
+  font-size: .9rem;
+}
+
+.page-item.active .page-link {
+  background: #4a74c9;
+  color: #fff;
+  border-color: #4a74c9;
+}
+
+.page-item.disabled .page-link {
+  color: #bbb;
+  pointer-events: none;
+}
+
+.page-item .page-link:hover {
+  background: #f6f8ff;
+  border-color: #dfe4ee;
+}
+
+/* ==============================
+   Math / KaTeX Integration
+   ============================== */
+.katex {
+  color:inherit; /* Keep math color consistent with text */
+}
+
+
+/* ==============================
+   Tables
+   ============================== */
+table {
+  /*width: 100%;*/
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  margin: 0 auto;      /* centered table */
+}
+
+th {
+  /*background-color: #ebebeb;*/
+  color: #000;
+  font-weight: bold;
+  text-align: left;
+  padding: 10px 14px;
+  border-bottom: 2px solid #aaa;
+}
+
+td {
+  padding: 9px 14px;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f7f7f7;
+}

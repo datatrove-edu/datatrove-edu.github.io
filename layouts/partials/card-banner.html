@@ -1,0 +1,21 @@
+{{- $p := . -}}
+{{- $b := $p.Param "banner" -}}
+{{- $res := cond (not (eq $b nil)) ($p.Resources.GetMatch $b) nil -}}
+{{- if and (not $res) $b }}{{ $res = $p.Resources.GetMatch (printf "**/%s" $b) }}{{ end -}}
+
+<a href="{{ $p.RelPermalink }}" class="card-banner-link">
+  {{- if $res -}}
+    <img class="card-banner" src="{{ $res.RelPermalink }}" alt="{{ $p.Title }}" loading="lazy" decoding="async">
+  {{- else if $b -}}
+    {{- if or (hasPrefix $b "http") (hasPrefix $b "/") -}}
+      <img class="card-banner" src="{{ $b }}" alt="{{ $p.Title }}" loading="lazy" decoding="async">
+    {{- else -}}
+      <img class="card-banner" src="{{ printf "%s%s" $p.RelPermalink $b }}" alt="{{ $p.Title }}" loading="lazy" decoding="async">
+    {{- end -}}
+  {{- else -}}
+    {{- with (first 1 ($p.Resources.ByType "image")) -}}
+      {{- $img := index . 0 -}}
+      <img class="card-banner" src="{{ $img.RelPermalink }}" alt="{{ $p.Title }}" loading="lazy" decoding="async">
+    {{- end -}}
+  {{- end -}}
+</a>

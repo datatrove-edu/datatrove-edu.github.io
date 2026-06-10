@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ block "title" . }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+  <!-- css -->
+  <link rel="stylesheet" href="/css/styles.css">
+  <!-- KaTeX -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      renderMathInElement(document.body, {
+        delimiters: [
+          {left: "$$", right: "$$", display: true},
+          {left: "\\[", right: "\\]", display: true},
+          {left: "$",  right: "$",  display: false},
+          {left: "\\(", right: "\\)", display: false}
+        ],
+        ignoredTags: ["script","noscript","style","textarea","pre","code"]
+      });
+    });
+  </script>
+  <style>
+    .katex { color: inherit; }
+  </style>
+  <!-- <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css"> -->
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <span class="brand"><a href="/">{{ .Site.Title }}</a></span>
+      <nav style="float:right">
+        <a href="/functions/">Function family</a>
+        <a href="/topics/">Topics</a>
+        <a href="/math_topics/">Math Topics</a>
+        <!-- <a href="/entries/">Entries</a> -->
+        <a href="/tags/">Tags</a>
+        {{ with .Site.Params.tagline }}<span style="color:#888; margin-left:8px">{{ . }}</span>{{ end }}
+      </nav>
+    </div>
+  </header>
+  {{ block "main" . }}{{ end }}
+  <script src="/js/lightbox.js"></script>
+  <footer>
+    A <a href="https://mcwg.github.io"> MCWG</a> site, {{ now.Format "2006" }}<br/>
+    Engineering by <a href="https://enriqueacosta.github.io">Enrique Acosta</a> <br/>
+    Built with  <a href="https://gohugo.io">Hugo</a><br/>
+    </footer>
+</body>
+</html>

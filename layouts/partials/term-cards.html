@@ -1,0 +1,31 @@
+{{/*
+  Shared card grid for taxonomy term pages (tags, functions, topics).
+  Call with: partial "term-cards.html" (dict "page" . "heading" "Tag: Foo")
+*/}}
+{{- $p       := .page -}}
+{{- $heading := .heading -}}
+
+<h1>{{ $heading }}</h1>
+<p style="color:#777">Showing all entries for "{{ $p.Title }}".</p>
+
+{{ $pages := where $p.Pages "Type" "entry" }}
+
+{{ if gt (len $pages) 0 }}
+  <div class="grid">
+    {{ range $pages }}
+      {{ $page := . }}
+      <article class="card">
+        {{ partial "card-banner.html" $page }}
+        <h2 class="card-title"><a href="{{ $page.RelPermalink }}">{{ $page.Title }}</a></h2>
+        {{/* Strip inline images so cards stay light */}}
+        {{ $sum := $page.Summary }}
+        {{ $sum = replaceRE `<figure[\s\S]*?</figure>` `` $sum }}
+        {{ $sum = replaceRE `<img[^>]*>` `` $sum }}
+        <div class="summary">{{ $sum | safeHTML }}</div>
+        <p class="more"><a href="{{ $page.RelPermalink }}">Read more →</a></p>
+      </article>
+    {{ end }}
+  </div>
+{{ else }}
+  <p>No entries here yet.</p>
+{{ end }}

@@ -1,0 +1,13 @@
+{{ define "main" }}
+<main class="container">
+  <h1>Tags</h1>
+  <ul style="list-style:none; padding:0; display:flex; flex-wrap:wrap; gap:.6rem 1rem">
+    {{ range $tag, $pages := .Data.Terms }}
+      <li>
+        <a class="tag" href="{{ .Page.RelPermalink }}">{{ $tag }}</a>
+        <span style="color:#888">({{ len $pages }})</span>
+      </li>
+    {{ end }}
+  </ul>
+</main>
+{{ end }}

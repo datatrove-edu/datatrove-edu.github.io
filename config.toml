@@ -1,0 +1,38 @@
+baseURL = "/"
+title = "Datasets Portal"
+languageCode = "en-us"
+
+[pagination]
+  pagerSize = 12
+
+[taxonomies]
+  tag = "tags"                       
+  function = "functions"             # /functions/linear/
+  topic = "topics"                   # /topics/climate-change/
+  math_topic = "math_topics"              # /topics/riemann-sums/
+
+[outputs]
+  home    = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML"]
+  term     = ["HTML", "RSS"]
+
+[params]
+  # will be rendered on the list page header
+  # tagline = "Select to explore."
+
+
+# Allow latex math in \( ...\) and \[....\] format
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          # Block math: support \[ ... ] and $$ ... $$
+          block = [['\[','\]'], ['$$','$$']]
+          # Inline math: support \( ... ) and also $ ... $
+          inline = [['\(','\)'], ['$', '$']]
+
+[markup.goldmark.renderer]
+  unsafe = true

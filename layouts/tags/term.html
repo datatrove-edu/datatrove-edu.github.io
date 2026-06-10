@@ -1,0 +1,5 @@
+{{ define "main" }}
+<main class="container">
+  {{ partial "term-cards.html" (dict "page" . "heading" (printf "Tag: %s" .Title)) }}
+</main>
+{{ end }}

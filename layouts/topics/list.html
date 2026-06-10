@@ -1,0 +1,14 @@
+{{ define "main" }}
+<main class="container">
+  <h1>Select the topic</h1>
+  <ul>
+  <!-- <ul style="list-style:none; padding:0; display:flex; flex-wrap:wrap; gap:.6rem 1rem"> -->
+    {{ range $topic, $pages := .Data.Terms }}
+      <li>
+        <a class="topic" href="{{ .Page.RelPermalink }}">{{ $topic }}</a>
+        <span style="color:#888">({{ len $pages }})</span>
+      </li>
+    {{ end }}
+  </ul>
+</main>
+{{ end }}

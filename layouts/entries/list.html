@@ -1,6 +1,6 @@
 {{ define "main" }}
 <main class="container">
-  <p>Real data for teaching and learning math. Browse by <a href="/functions/">function family</a>, <a href="/math_topics/">math topic</a>, or <a href="/topics/">general topic</a> to find an entry that fits your lesson.</p>
+  <p>Real data for teaching and learning math. Browse by <a href="/functions/">function family</a>, <a href="/math_topics/">math topic</a>, or <a href="/topics/">general topic</a>. Or jump straight to a tag:</p>
 
   <!-- <h1>{{ .Title }}</h1> -->
 
@@ -10,7 +10,8 @@
         {{ $slug := urlize $name }}
         {{ $term := site.GetPage (printf "tags/%s" $slug) | default (site.GetPage (printf "/tags/%s" $slug)) }}
         <a class="tag-chip" href="{{ if $term }}{{ $term.RelPermalink }}{{ else }}{{ printf "/tags/%s/" $slug }}{{ end }}">
-          {{ $name }} ({{ len $pages }})
+          {{ $name }} 
+          <!-- ({{ len $pages }}) -->
         </a>
       {{ end }}
     </div>

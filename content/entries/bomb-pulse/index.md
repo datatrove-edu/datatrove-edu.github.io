@@ -24,7 +24,9 @@ More interesting details in the [wikipedia article](https://en.wikipedia.org/wik
 Form the [wikipedia article](https://en.wikipedia.org/wiki/Bomb_pulse): approx 4% decay per year since 1963.
 > Starting from the pulse around the year 1963 (see figure), atmospheric radiocarbon relative abundance decreased by about 4% a year
 
-In the precalculus problem we have (see below), it is expressed as difference of two exponentials $e^{-0.1t} - e^{-0.7t}$ (a surge).
+I can also be expressed as difference of two exponentials $e^{-0.1t} - e^{-0.7t}$ (a surge).
+
+<!-- In the precalculus problem we have (see below), it is expressed as difference of two exponentials $e^{-0.1t} - e^{-0.7t}$ (a surge). -->
 
 <!-- ## Used in PRECALCULUS -->
 <!-- * Problem 39, section 10-4. {{< expand title="other editions" >}} -->

@@ -18,7 +18,7 @@ In a given country, the population of a city is inversely proportional to a powe
 \]
 The value of $b$ is often close to 1.
 
-### Example for Colombia from Enrique ([source](https://enriqueacosta.github.io/blog/en/posts/zipfcolombia2025/))
+### Example for Colombia ([source](https://enriqueacosta.github.io/blog/en/posts/zipfcolombia2025/))
 {{< figure src="zipfColombia.png" width="800px" caption="Zipf's Law for Colombia" >}}
 
 

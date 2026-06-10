@@ -39,6 +39,13 @@ header {
   padding:14px;
 }
 
+/* Clearfix: keep header background sized to fit floated nav when it wraps */
+.wrap::after {
+  content:"";
+  display:table;
+  clear:both;
+}
+
 .brand { font-weight:700; }        /* Site title bold */
 
 /* Nav links stay neutral/dark to differentiate from content links */

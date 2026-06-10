@@ -3,7 +3,7 @@ title = "DataTrove-edu"
 languageCode = "en-us"
 
 [pagination]
-  pagerSize = 12
+  pagerSize = 24
 
 [taxonomies]
   tag = "tags"                       

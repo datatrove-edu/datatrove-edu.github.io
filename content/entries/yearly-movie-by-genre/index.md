@@ -30,11 +30,10 @@ Note, exponential fit is not fantastic throughout for all genres, but there is a
 
 
 ## Resources
-*  [Data from 2020 to Sep 2025](imdb_movies_by_genre_1950_2024.csv) in csv form (ready to be used in a spreadsheet of with an LLM). Date accessed: 24 September 2025.
-*  [Python script](exportScript.py) to export the data, and [link to the IMDB dataset](https://developer.imdb.com/non-commercial-datasets/) (the script needs file `title.basics.tsv.gz`).
-*  [Jupyter notebook for 1980-2015 strech](MovieGenresExponentials1980-2015.ipynb) for everal genres that give a good fit.
-    -  includes also graphs of each genre together with "Romance", which has the slowest growth rate of them all.
-    -  also online [here](https://colab.research.google.com/drive/1QhEjEtdhUYwErJ7hDjYXdgk4W8iIdHqU#scrollTo=XwaoQvuzP3mO)
+*  [Colab notebook for the 1980-2015 stretch](https://colab.research.google.com/drive/1QhEjEtdhUYwErJ7hDjYXdgk4W8iIdHqU#scrollTo=XwaoQvuzP3mO) — the recommended way to get the data and plots. The first cell downloads IMDb's dataset directly from [datasets.imdbws.com](https://datasets.imdbws.com/) and computes the genre counts itself, so just open it and "Run all" (no local Python install needed).
+    -  includes graphs of each genre together with "Romance", which has the slowest growth rate of them all.
+    -  also available as a [downloadable notebook](MovieGenresExponentials1980-2015.ipynb).
+*  For local/offline use: [Python script](exportScript.py) that processes IMDb's `title.basics.tsv.gz` (download it yourself from [datasets.imdbws.com](https://developer.imdb.com/non-commercial-datasets/), per IMDb's non-commercial terms) into a yearly genre-count csv.
 
 
 

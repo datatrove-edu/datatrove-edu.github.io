@@ -29,6 +29,6 @@ This is the color legend for the maps:
 ## Data and images.
 *Attrbution*: Images from the U.S. Geological Survey (USGS) Earth Resources Observation and Science (EROS) Center — National Land Cover Database (NLCD). As a work of the U.S. federal government, this data is in the public domain.
 
-*  [zip file](Earthshots-LandCoverMaps.zip) with images every 5 years, originally obtained from [eros.usgs.gov](https://eros.usgs.gov/earthshots/land-cover-maps) site.
+*  [zip file](Earthshots-LandCoverMaps.zip) with images every 5 years, originally obtained from [eros.usgs.gov](https://eros.usgs.gov/earthshots/land-cover-maps) site. Date accessed: 5 June 2026.
 
 

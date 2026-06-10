@@ -20,9 +20,9 @@ Data for full flowering date for cherry trees at Kyoto since 9th century shows i
 Article from the BBC: “The cherry blossom season, Japan's traditional sign of spring, has peaked at the earliest date since records began 1,200 years ago, research shows.”  March 2020
 
 
-*  [PPT slides from Deb](CherryBlossoms.pptx) for teachers with details about this activity.
+*  [PPT slides from Deborah Hughes-Hallett](CherryBlossoms.pptx) for teachers with details about this activity.
 *  [Spreadsheet](KyotoFlowerDates.xlsx) with data and plots.
-*  Source of data: http://atmenv.envi.osakafu-u.ac.jp/aono/kyophenotemp4/
+*  Source of data: http://atmenv.envi.osakafu-u.ac.jp/aono/kyophenotemp4/ Date accessed: 13 September 2025.
 
 
 See also:

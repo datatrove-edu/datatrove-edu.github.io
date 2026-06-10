@@ -19,7 +19,7 @@ For more information on Air Pollutant Concentrations, see the [Wikipedia article
 
  
 ## Data and images.
-*Attrbution*: Data and images come from the from the London Datastore at [data.london.gov.uk](https://data.london.gov.uk/dataset/london-atmospheric-emissions-inventory-laei-2022-2lg5g/). The Greater London Authority cannot warrant the quality or accuracy of the data.
+*Attrbution*: Data and images come from the London Datastore at [data.london.gov.uk](https://data.london.gov.uk/dataset/london-atmospheric-emissions-inventory-laei-2022-2lg5g/). The Greater London Authority cannot warrant the quality or accuracy of the data. Date accessed: 5 June 2026.
 
 *  [Map of NO_2 mean concentration for 2022 London](Annual-mean-NOx-concentrations-2022.jpg).
 *  [Map of NO_x mean concentration for 2022 London](Annual-mean-NOx-concentrations-2022.jpg).

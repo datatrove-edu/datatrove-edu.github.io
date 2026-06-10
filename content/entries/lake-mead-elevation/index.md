@@ -24,5 +24,5 @@ Notable from the data:
 
  
 ## Data
-*  [end-of-month elevation](lake_mead_elevation.csv) in csv format. Data from the U.S. Bureau of Reclamation, Lower Colorado Region. Retrieved and reformatted from https://www.usbr.gov/lc/region/g4000/hourly/mead-elv.html.
+*  [end-of-month elevation](lake_mead_elevation.csv) in csv format. Data from the U.S. Bureau of Reclamation, Lower Colorado Region. Retrieved and reformatted from https://www.usbr.gov/lc/region/g4000/hourly/mead-elv.html. Date accessed: 28 May 2026.
 

@@ -10,7 +10,7 @@ topics: ["viral", "social media"]
 tags: ["Gangnam", "YouTube"]
 ---
 
-Viral music video from Corea. Total number of YouTube views was initially exponential, growing around 4.89% per day. 
+Viral music video from Korea. Total number of YouTube views was initially exponential, growing around 4.89% per day. 
 <!--more-->
 Most viewed video in YouTube from November 2012 to July 2017. 
 

@@ -20,4 +20,4 @@ See a scrollable of all 100 images in the [wikimedia site](https://commons.wikim
 
 
 ## Data
-*  [zip file](10LungCTSlices.zip) with 10 slices for integration problems, compiled from the [wikimedia site](https://commons.wikimedia.org/wiki/Scrollable_high-resolution_computed_tomography_images_of_a_normal_thorax). Images by *Mikael Häggström, MD.*, CC0 1.0 Universal Public Domain Dedication license.
+*  [zip file](10LungCTSlices.zip) with 10 slices for integration problems, compiled from the [wikimedia site](https://commons.wikimedia.org/wiki/Scrollable_high-resolution_computed_tomography_images_of_a_normal_thorax). Images by *Mikael Häggström, MD.*, CC0 1.0 Universal Public Domain Dedication license. Date accessed: 14 May 2026.

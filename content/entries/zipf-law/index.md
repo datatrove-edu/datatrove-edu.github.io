@@ -26,9 +26,9 @@ The value of $b$ is often close to 1.
 *  Power function lab for precalculus.
 
 
-## Used in APPLIED
-* Problem 26, section 1-7, 7th edition {{< expand title="other editions" >}}
-prob 26 in 6th, 5th edition, review problem 65 in 4th edition
-{{< /expand >}}
+<!-- ## Used in APPLIED -->
+<!-- * Problem 26, section 1-7, 7th edition {{< expand title="other editions" >}} -->
+<!-- prob 26 in 6th, 5th edition, review problem 65 in 4th edition -->
+<!-- {{< /expand >}} -->
    <!-- (prob 26 in 6th, 5th edition, review problem 65 in 4th edition) -->
 

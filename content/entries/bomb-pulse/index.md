@@ -26,9 +26,9 @@ Form the [wikipedia article](https://en.wikipedia.org/wiki/Bomb_pulse): approx 4
 
 In the precalculus problem we have (see below), it is expressed as difference of two exponentials $e^{-0.1t} - e^{-0.7t}$ (a surge).
 
-## Used in PRECALCULUS
-* Problem 39, section 10-4. {{< expand title="other editions" >}}
-PENDING
-{{< /expand >}}. 
+<!-- ## Used in PRECALCULUS -->
+<!-- * Problem 39, section 10-4. {{< expand title="other editions" >}} -->
+<!-- PENDING -->
+<!-- {{< /expand >}}.  -->
    <!-- (prob 26 in 6th, 5th edition, review problem 65 in 4th edition) -->
 

@@ -23,5 +23,5 @@ From the [wikipedia article](https://en.wikipedia.org/wiki/Nenana_Ice_Classic)
 
 
 * Official website: https://www.nenanaakiceclassic.com
-* [Spreadsheet data](NenanaIceClassic_Sols_Full.xlsx)
-* [Sample problem statements from Deb](Nenana.docx)
+* [Spreadsheet data](NenanaIceClassic_Sols_Full.xlsx). Date accessed: 15 January 2026.
+* [Sample problem statements from Deborah Hughes-Hallett](Nenana.docx)

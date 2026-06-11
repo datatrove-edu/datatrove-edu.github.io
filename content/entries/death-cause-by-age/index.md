@@ -26,7 +26,7 @@ The following data comes from *Centers for Disease Control and Prevention, Natio
 *  [Adapted data (Excel file)](UnderlyingCauseOfDeath2018-2024newCategories.xlsx) in which *cause of death* terms that have been renamed for non-experts as follows:
     -  Neoplasms --> Cancers
     -  External Causes --> Accidents
-    -  Pregnancy, childbirth and the puerperium --> Pregnancy complications
-    -  Certain conditions originating in the perinatal period --> Conditions from first year of birth
+    -  Pregnancy, childbirth and the puerperium --> Maternal pregnancy complications
+    -  Certain conditions originating in the perinatal period --> Pregnancy and birth complications
 *  Same as above, but [sorted by cause of death](UnderlyingCauseOfDeath2018-2024-newCategoriesSORTED.xlsx)
 *  [Raw data from the CDC](UnderlyingCauseOfDeath_2018-2024.xlsx). 

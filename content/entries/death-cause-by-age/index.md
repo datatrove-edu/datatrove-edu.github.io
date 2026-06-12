@@ -8,7 +8,7 @@ functions: ["Several function families at once"]
 topics: ["Public health"]
 tags: ["Cause of death", "Cancer", "Heart disease", "Infectious & parasitic diseases", "Blood & immune disorders"]
 ---
-Data for deaths per thousand people in the US at each age for all causes of death in 2018. 
+Data for deaths per thousand people in the US at each age for all causes of death during 2018–2024. 
  
 <!--more-->
 
@@ -23,10 +23,10 @@ May be used in activities where students are asked to identify function families
 ## Data
 The following data comes from *Centers for Disease Control and Prevention, National Center for Health Statistics. National Vital Statistics, Date accessed [15 May 2026]*. Available from http://wonder.cdc.gov/ucd-icd10-expanded.html.
 
-*  [Adapted data (Excel file)](UnderlyingCauseOfDeath2018newCategories.xlsx) in which *cause of death* terms that have been renamed for non-experts as follows:
+*  [Adapted data (Excel file)](UnderlyingCauseOfDeath2018-2024newCategories.xlsx) in which *cause of death* terms that have been renamed for non-experts as follows:
     -  Neoplasms --> Cancers
     -  External Causes --> Accidents
     -  Pregnancy, childbirth and the puerperium --> Maternal pregnancy complications
     -  Certain conditions originating in the perinatal period --> Pregnancy and birth complications
-*  Same as above, but [sorted by cause of death](UnderlyingCauseOfDeath2018-newCategoriesSORTED.xlsx)
-*  [Raw data from the CDC](UnderlyingCauseOfDeath_2018.xlsx). 
+*  Same as above, but [sorted by cause of death](UnderlyingCauseOfDeath2018-2024-newCategoriesSORTED.xlsx)
+*  [Raw data from the CDC](UnderlyingCauseOfDeath_2018-2024.xlsx). 

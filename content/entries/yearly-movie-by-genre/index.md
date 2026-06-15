@@ -2,8 +2,8 @@
 title: "Exponential growth of yearly movies"
 date: 2026-06-14
 type: "entry"
-banner: "romance_horror_comedy_1950_2014_linear.png"
-banner_ref: ""
+banner: " movies-banner.png"
+banner_ref: "Image generated with Claude, 2026"
 
 functions: ["Exponential"]
 math_topics: ["Curve fitting", "Modeling"]

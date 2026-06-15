@@ -25,7 +25,7 @@ The exponential fit is not equally good for every genre. There is a particular s
 
 ## The data
 
-All files below are derived from [Wikidata](https://www.wikidata.org), dedicated to the public domain under [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/),  so you may download, host, modify, and redistribute them freely. Films whose Wikidata genres include adult or exploitation categories are excluded from these counts.
+All files below are derived from [Wikidata](https://www.wikidata.org), dedicated to the public domain under [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/),  so you may download, host, modify, and redistribute them freely. Films whose Wikidata genres include adult or exploitation categories are excluded from these counts. The data was accessed on June 2026. More information on how the data was obtained, filtered, and processed [here](data/README.txt).
 
 The data groups movie counts into eighteen broad genres: drama, comedy, documentary, action, thriller, horror, crime, romance, adventure, science_fiction, biography, fantasy, musical, war, mystery, history, western, family.
 
@@ -36,8 +36,6 @@ The data groups movie counts into eighteen broad genres: drama, comedy, document
 
 
 Our sincere thanks to the volunteers **Wikidata** editors and to the **Wikimedia Foundation** for maintaining a film catalogue in the public domain. CC0 asks for nothing in return — not even attribution — which is exactly what lets us post the data and the ready-to-use CSVs here. 
-
-More information on how the data was obtained, filtered, and processed [here](data/README.txt).
 
 Note: IMDb's dataset would have been a natural source, but its [non-commercial license](https://developer.imdb.com/non-commercial-datasets/) forbids republishing the data "to create any kind of online/offline database of movie information." That means we cannot share IMDb-derived numbers at all. 
 

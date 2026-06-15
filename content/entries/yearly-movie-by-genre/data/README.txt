@@ -50,7 +50,7 @@ Films whose Wikidata genres include adult or exploitation categories are exclude
 
 
 ## How the data was compiled
-The counts come from a single [SPARQL](https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service) query against Wikidata: every film (`wd:Q11424`) with a publication date (`P577`) and a genre (`P136`), counted per genre and year. Films carrying an adult or exploitation genre are excluded, since Wikidata cross-tags many of them into mainstream genres.
+The counts come from a single [SPARQL](https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service) query against Wikidata: every film (`wd:Q11424`) with a publication date (`P577`) and a genre (`P136`), counted per genre and year. Films carrying an adult or exploitation genre are excluded, since Wikidata cross-tags many of them into mainstream genres. Data was accessed at [https://qlever.dev/wikidata/qlSpkJ#csv](https://qlever.dev/wikidata/qlSpkJ#csv) on June, 2026
 
 ```sparql
 PREFIX wd:   <http://www.wikidata.org/entity/>

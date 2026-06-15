@@ -1,0 +1,30 @@
+PREFIX wd:   <http://www.wikidata.org/entity/>
+PREFIX wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+# Films (Q11424) with a publication date (P577) and genre (P136),
+# counted per genre per year, 1950-2025, EXCLUDING adult/exploitation films.
+# Run on the QLever Wikidata mirror: https://qlever.cs.uni-freiburg.de/wikidata
+SELECT ?label ?year (COUNT(DISTINCT ?film) AS ?count) WHERE {
+  ?film  wdt:P31  wd:Q11424 ;
+         wdt:P577 ?date ;
+         wdt:P136 ?genre .
+  ?genre rdfs:label ?label .
+  FILTER(LANG(?label) = "en")
+  BIND(YEAR(?date) AS ?year)
+  FILTER(?year >= 1950 && ?year <= 2025)
+  MINUS {
+    ?film wdt:P136 ?bad .
+    ?bad rdfs:label ?badlabel .
+    VALUES ?badlabel {
+      "erotic film"@en "pornographic film"@en "sex film"@en "exploitation film"@en
+      "sexploitation film"@en "erotic thriller"@en "erotic thriller film"@en
+      "blaxploitation film"@en "pink film"@en "pornographic parody film"@en
+      "Bavarian porn"@en "softcore pornography"@en "lesbian pornographic film"@en
+      "gay pornographic film"@en "Nazi exploitation"@en "erotic drama film"@en
+      "erotica"@en "gonzo pornography"@en "comedy porn film"@en "MILF pornography"@en
+    }
+  }
+}
+GROUP BY ?label ?year
+ORDER BY ?label ?year

@@ -34,10 +34,6 @@ The data groups movie counts into eighteen broad genres: drama, comedy, document
 * **Per-genre files** ([zip file](movie_genres_1950_2025.zip)) — one file per genre with two columns, `year,count`, covering every year 1950–2025. 
 
 
-
-Our sincere thanks to the volunteers **Wikidata** editors and to the **Wikimedia Foundation** for maintaining a film catalogue in the public domain. CC0 asks for nothing in return — not even attribution — which is exactly what lets us post the data and the ready-to-use CSVs here. 
-
-Note: IMDb's dataset would have been a natural source, but its [non-commercial license](https://developer.imdb.com/non-commercial-datasets/) forbids republishing the data "to create any kind of online/offline database of movie information." That means we cannot share IMDb-derived numbers at all. 
-
+Our sincere thanks to **Wikidata** and the **Wikimedia Foundation** for maintaining a film catalogue in the public domain. CC0 asks for nothing in return (not even attribution), which is exactly what lets us post the data and the ready-to-use CSVs here. Note: IMDb's dataset would have been a natural source, but its [non-commercial license](https://developer.imdb.com/non-commercial-datasets/) forbids republishing the data "to create any kind of online/offline database of movie information." 
 
 

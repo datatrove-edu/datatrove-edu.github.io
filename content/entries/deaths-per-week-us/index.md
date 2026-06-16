@@ -45,11 +45,11 @@ For a plot with other causes of death, see the [Scientific American Article](htt
 
 
 ## Cleaned up data
-All the data comes from *National Center for Health Statistics. Weekly Counts of Death by Jurisdiction and Select Causes of Death, date accessed [26 Feb 2026]*, available from https://data.cdc.gov/d/u6jv-9ijr.
+All the data comes from *National Center for Health Statistics. Weekly Counts of Death by Jurisdiction and Select Causes of Death, date accessed [26 Feb 2026]*, available from the CDC site https://data.cdc.gov/d/u6jv-9ijr.
 
-*  [US data for heart related or cancer deaths only](us_weekly_cancer_and_heart_data_only.csv). Built from the raw CDC data (link below in the "Sources" section). This is the data that was used for the plots above. It combines "Heart failure" and "Ischemic heart disease" into one group (Heart) and relabels "Malignant neoplasms" into "Cancer". 
+*  [US data for heart related or cancer deaths only](us_weekly_cancer_and_heart_data_only.csv). Built from the raw CDC data. This is the data that was used for the plots above. It combines "Heart failure" and "Ischemic heart disease" into one group (Heart) and relabels "Malignant neoplasms" into "Cancer". 
 *  [US data for weekly deaths (aggregate of all causes)](us_weekly_all_causes_total_deaths.csv). Filtered and organized from the raw CDC data (link below in the "Sources" section).
-*  [US data only](weekly_deaths_united_states_only.csv). Filtered and organized from the raw CDC data (link below in the "Sources" section). The raw data from the CDC in the sources gives weekly data for all states in a 80MB file, this is more manageable.
+*  [US data only](weekly_deaths_united_states_only.csv). Filtered and organized from the raw CDC data. (The raw data gives weekly data for all states in a 80MB file, this is more manageable.)
 
 
 ## Sources

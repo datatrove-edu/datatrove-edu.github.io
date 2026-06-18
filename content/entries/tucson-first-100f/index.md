@@ -18,5 +18,7 @@ The first day temperature goes over 100 °F at Tucson Airport each year is falli
 
 * [PPT slides from Deborah Hughes-Hallett](TucsonIceBreak.pptx)
 * [Sample problem statements and solutions from Deborah Hughes-Hallett](TucsonIceBreakProblems.docx)
-* [Spreadsheet data](IcebreakTucson-21_Sols_Full.xlsx)
-* Source: [NOAA site](https://www.wrh.noaa.gov/twc/climate/Tucson100s/Tucson100s_1st100.php). Date accessed: 12 September 2025.
+* [Spreadsheet data](IcebreakTucson-21_Sols_Full.xlsx).
+
+## Source
+The original source for the data is no longer available ([a NOAA site accessed on 2022](https://www.wrh.noaa.gov/twc/climate/Tucson100s/Tucson100s_1st100.php)). An alternate source is this [weather.gov](https://www.weather.gov/twc/Tucson100syearly) site (the linear fit may give different numbers to the ones in the graph above).

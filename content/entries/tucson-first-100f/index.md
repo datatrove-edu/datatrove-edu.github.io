@@ -21,4 +21,4 @@ The first day temperature goes over 100 °F at Tucson Airport each year is falli
 * [Spreadsheet data](IcebreakTucson-21_Sols_Full.xlsx).
 
 ## Source
-The original source for the data is no longer available ([a NOAA site accessed on 2022](https://www.wrh.noaa.gov/twc/climate/Tucson100s/Tucson100s_1st100.php)). An alternate source is this [weather.gov](https://www.weather.gov/twc/Tucson100syearly) site (the linear fit may give different numbers to the ones in the graph above).
+The original source for the data is no longer available ([a NOAA site accessed on 2022](https://www.wrh.noaa.gov/twc/climate/Tucson100s/Tucson100s_1st100.php)). An alternate source is this [weather.gov](https://www.weather.gov/twc/Tucson100syearly) site, or this [Pima County Public Library site](https://www.library.pima.gov/content/ice-breaking-on-the-santa-cruz-river/). Note: the linear fit may give different numbers to the ones in the graph above.

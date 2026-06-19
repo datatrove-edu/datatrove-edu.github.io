@@ -11,7 +11,7 @@ topics: ["Climate change"]
 tags: ["Cherry blossoms", "Japan"]
 ---
 
-Data for full flowering date for cherry trees at Kyoto since 9th century. The 20 year moving average that a strong recent drop.
+Data since the 9th century of the full-flowering date of Kyoto's cherry trees. The 20-year moving average has dropped noticeably in recent years.
 
 <!--more-->
 

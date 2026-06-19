@@ -2,8 +2,8 @@
 title: "Amazon Rainforest Deforestation"
 date: 2026-06-04
 type: "entry"
-banner: "banner-screenshotAmazonDeforestation.png" 
-banner_ref: "Screenshot of a map at [TerraBrasilis/INPE](https://terrabrasilis.dpi.inpe.br/app/dashboard/deforestation/biomes/legal_amazon/rates)" 
+banner: "rainforestBannerNanoBanana.jpg" 
+banner_ref: "Image generated with AI (nano banana)." 
 math_topics: ["Optimization", "Integration"]
 topics: ["Deforestation"]
 tags: ["Amazon rainforest"]

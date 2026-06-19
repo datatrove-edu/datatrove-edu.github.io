@@ -6,7 +6,7 @@ type: "entry"
 # banner_ref: "Picture from [Wikipedia](https://commons.wikimedia.org/wiki/File:Saguaro_Sunset.jpg), CC-BY 3.0" 
 functions: ["Several function families at once"]
 topics: ["Public health"]
-tags: ["Cause of death", "Cancer", "Heart disease", "Infectious & parasitic diseases", "Blood & immune disorders"]
+tags: ["Cause of death", "Cancer", "Heart disease", "Infectious and parasitic diseases", "Blood and immune disorders"]
 ---
 Data for deaths per thousand people in the US at each age for all causes of death during 2018–2024. 
  

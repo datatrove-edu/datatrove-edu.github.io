@@ -53,7 +53,7 @@ for i, col in enumerate(sorted_columns):
     )
 
 # 3. Labeling and Formatting
-ax.set_title("US Weekly Deaths by Cause (Colorblind-Accessible)", fontsize=16, fontweight='bold', pad=15)
+ax.set_title("US Weekly Deaths by Cause", fontsize=16, fontweight='bold', pad=15)
 ax.set_xlabel("Date", fontsize=11, labelpad=10)
 ax.set_ylabel("Number of Deaths", fontsize=11, labelpad=10)
 

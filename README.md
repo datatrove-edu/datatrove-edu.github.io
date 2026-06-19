@@ -38,7 +38,7 @@ When linking to an external data source, note the date the data was retrieved (e
 If a data file is hosted in this repo (rather than just linked externally), reference its license/attribution in the entry (e.g. "CC BY-SA 4.0", "public domain", "CC0") and confirm the source's terms allow redistribution before adding the file.
 
 ## Linking to standalone HTML files
-Hugo treats `.html` files placed inside an entry's content bundle as pages, not static files, so a normal markdown link to one will 404. Instead:
+Hugo treats `.html` files placed inside an entry's content bundle as pages, not static files, so a normal markdown link to one will produce a 404 error. Instead:
 1. Place the HTML file in `static/standalone/<entry-name>/`.
 2. Link to it with an absolute path: `[See this html file](/standalone/<entry-name>/my-plots.html)`.
 

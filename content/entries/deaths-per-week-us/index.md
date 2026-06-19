@@ -11,8 +11,7 @@ tags: ["Cancer", "Heart disease"]
 
 The historical data of deaths per week of the year are sinusoidal for many causes of death. They vary by season with peaks in winter and troughs in summer. 
 <!--more-->
-For heart disease, the periodic variation apparently is a combination of stress, overeating/drinking, extra exertion (like shovelling snow) - all apparently equates to more heart attacks.
-
+For heart disease, the periodic variation is apparently a combination of stress, overeating/drinking, and extra exertion (like shoveling snow): all apparently lead to more heart attacks.
 
 These are heart-related weekly deaths in the US:
 {{< figure src="weekly_deaths_heart_US.png" width="700px" caption="Heart disease deaths per week in the US" >}}
@@ -27,7 +26,7 @@ Here are aggregate weekly deaths in the US, from all causes, which show a notice
 
 
 
-There is a periodic component and a mild growth trend which may be due to population growth. Thus, one could think about modelling these as purely periodic, or adding a linear or exponential term.
+There is a periodic component and a mild growth trend which may be due to population growth. Thus, modeling these could be purely periodic, or one could add a linear or exponential term.
 
 For example, a possible model for weekly heart-related deaths in the US is shown below
 
@@ -40,11 +39,11 @@ For a plot with other causes of death, see the [Scientific American Article](htt
 
 
 ## Cleaned up data
-The cause-specific data comes from *National Center for Health Statistics. Weekly Counts of Death by Jurisdiction and Select Causes of Death*, accessed on 26 Feb 2026, available from the CDC site https://data.cdc.gov/d/u6jv-9ijr. The aggregate all-cause weekly totals come from *National Center for Health Statistics. Excess Deaths Associated with COVID-19*, accessed on 16 Jun 2026, available from https://data.cdc.gov/d/xkkf-xrst.
+The cause-specific data comes from *National Center for Health Statistics. Weekly Counts of Death by Jurisdiction and Select Causes of Death*, accessed on February 26, 2026, available from the CDC site https://data.cdc.gov/d/u6jv-9ijr. The aggregate all-cause weekly totals come from *National Center for Health Statistics. Excess Deaths Associated with COVID-19*, accessed on June 16, 2026, available from https://data.cdc.gov/d/xkkf-xrst.
 
 *  [US data for weekly deaths (aggregate of all causes)](us_weekly_all_cause_deaths.csv). Filtered from the CDC "Excess Deaths Associated with COVID-19" dataset (see Sources). Weighted counts, which correct the most recent weeks for reporting delays and so drop the falling tail visible in the plots above. Raw counts are in the [unweighted version](us_weekly_all_cause_deaths_unweighted.csv).
 *  [US data for heart related or cancer deaths only](us_weekly_cancer_and_heart_data_only.csv). Built from the raw CDC data; weighted counts that correct the most recent weeks for reporting delays. It combines "Heart failure" and "Ischemic heart disease" into one group (Heart) and relabels "Malignant neoplasms" into "Cancer". The plots above use the [unweighted version](us_weekly_cancer_and_heart_data_only_unweighted.csv), so they won't match this file at the right edge.
-*  [US data only](weekly_deaths_united_states_only.csv). Filtered and organized from the raw CDC data. (The raw data gives weekly data for all states in large file, this is more manageable.)
+*  [US data only](weekly_deaths_united_states_only.csv). Filtered and organized from the raw CDC data.
 
 
 ## Sources

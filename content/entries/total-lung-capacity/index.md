@@ -20,7 +20,7 @@ See a scrollable of all 100 images in the [wikimedia site](https://commons.wikim
 
 ## Data
 
-All the data below is adapted and constructed from CT-scan images available at [wikimedia](https://commons.wikimedia.org/wiki/Scrollable_high-resolution_computed_tomography_images_of_a_normal_thorax). Images by *Mikael Häggström, MD.*, CC0 1.0 Universal Public Domain Dedication. Date accessed: 14 May 2026.
+All the data below is adapted and constructed from CT-scan images available at [wikimedia](https://commons.wikimedia.org/wiki/Scrollable_high-resolution_computed_tomography_images_of_a_normal_thorax). Images by *Mikael Häggström, MD.*, CC0 1.0 Universal Public Domain Dedication. Date accessed: May 14, 2026.
 
 **Note on scale for the images:** The original images have no exact scale data, but you can use an approximate scale of 0.287 mm/pixel,[^scale] so each pixel ≈ 0.287² = 0.0824 mm².
 

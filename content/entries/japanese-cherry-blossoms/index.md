@@ -11,7 +11,7 @@ topics: ["Climate change"]
 tags: ["Cherry blossoms", "Japan"]
 ---
 
-Data shows that since the 9th century, the date of the full flowering of Kyoto's cherry trees is happening about 4 days earlier every 70 years.
+Data shows that since the 9th century, the date of the full flowering of Kyoto's cherry trees happens about 4 days earlier every 70 years.
 
 <!--more-->
 
@@ -22,7 +22,7 @@ Article from the BBC: “The cherry blossom season, Japan's traditional sign of 
 
 *  [PPT slides from Deborah Hughes-Hallett](CherryBlossoms.pptx) for teachers with details about this activity.
 *  [Spreadsheet](KyotoFlowerDates.xlsx) with data and plots.
-*  The original source for the data is no longer available. It was obtained from http://atmenv.envi.osakafu-u.ac.jp/aono/kyophenotemp4/, Date accessed: 13 September 2025.
+*  The original source for the data is no longer available. It was obtained from http://atmenv.envi.osakafu-u.ac.jp/aono/kyophenotemp4/, Date accessed: September 13, 2025.
 
 *  Alternate source for the data:
 

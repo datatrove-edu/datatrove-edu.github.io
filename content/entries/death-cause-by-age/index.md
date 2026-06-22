@@ -21,7 +21,7 @@ May be used in activities where students are asked to identify function families
 
 
 ## Data
-The following data comes from *Centers for Disease Control and Prevention, National Center for Health Statistics. National Vital Statistics, Date accessed [15 May 2026]*. Available from http://wonder.cdc.gov/ucd-icd10-expanded.html.
+The following data comes from *Centers for Disease Control and Prevention, National Center for Health Statistics. National Vital Statistics*, Date accessed, May 15, 2026. Available from http://wonder.cdc.gov/ucd-icd10-expanded.html.
 
 *  [Adapted data (Excel file)](UnderlyingCauseOfDeath2018-2024newCategories.xlsx) in which *cause of death* terms that have been renamed for non-experts as follows:
     -  Neoplasms --> Cancers

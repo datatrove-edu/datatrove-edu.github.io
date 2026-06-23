@@ -20,7 +20,7 @@ In particular, one can think about temperature changes as one drives along a hig
 
 
  
-## Data and images.
+## Oregon and I-84 Temperature and Geographical data.
 *  [Max Temperatures throughout the US on July 27, 2025](prism_tmax_us_30s_20250727.tif) (tif file). Data from PRISM Climate Group, Oregon State University, https://prism.oregonstate.edu, created June 19, 2026. Freely reproduced and distributed with attribution to PRISM.
 *  Geographical data for the Oregon border and the I-84 interstate from the US Census Bureau TIGER:
    *  [oregon.geojson](oregon.geojson): the Oregon state boundary, extracted from the [State Boundaries file](https://www2.census.gov/geo/tiger/TIGER2025/STATE/tl_2025_us_state.zip) (`tl_2025_us_state`).

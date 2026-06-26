@@ -6,7 +6,6 @@ tags: []         # See data/allowed_tags.yaml
 topics: []       # See data/allowed_topics.yaml
 functions: []    # See data/allowed_functions.yaml
 math_topics: []  # See data/allowed_math_topics.yaml
-summary: ""
 ---
 Write the entry. Everything before the "more" comment gets displayed in the card.
 <!--more-->

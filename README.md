@@ -13,10 +13,10 @@ Live site: https://datatrove-edu.github.io/
 - The main file describing the entry is `content/entries/<entry-name>/index.md`.
 - Images and data files for the entry should be placed in the same `content/entries/<entry-name>/` folder.
 - In `index.md`, use `<!--more-->` to separate the summary that shows up in the entry's card from the rest of the content.
-- Run `hugo new entries/<entry-name>/index.md` to scaffold a new entry from `archetypes/entry.md`, which includes markdown tips and notes on linking standalone HTML files.
+- Run `hugo new entries/<entry-name>/index.md` to scaffold a new entry from `archetypes/entries.md`, which includes markdown tips and notes on linking standalone HTML files.
 
 ## Creating a new entry
-1. Run `hugo new entries/<entry-name>/index.md` (kebab-case name) to scaffold the entry from `archetypes/entry.md`.
+1. Run `hugo new entries/<entry-name>/index.md` (kebab-case name) to scaffold the entry from `archetypes/entries.md`.
 2. Fill in the frontmatter: `title`, `date`, `tags`, `topics`, `functions`, `math_topics` and `summary`. See the "Tags, topics, functions, math_topics" section below for reusing existing values.
 3. Add any images and data files into `content/entries/<entry-name>/` and reference them with relative links/`{{< figure >}}` shortcodes.
 4. Write the summary above `<!--more-->` and the rest of the entry below it.

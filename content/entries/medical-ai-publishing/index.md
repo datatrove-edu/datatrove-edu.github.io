@@ -8,8 +8,10 @@ topics: ["Public health"]       # See data/allowed_topics.yaml
 functions: ["Exponential"]    # See data/allowed_functions.yaml
 math_topics: ["Curve fitting"]  # See data/allowed_math_topics.yaml
 ---
-AI-related medical publications on PubMed have grown roughly 35% per year since 2014, doubling approximately every 2 years.
+AI-related medical publications on PubMed have grown roughly 35% per year since 2014.
 <!--more-->
+
+This corresponds to a doubling time of approximately every 2 years.
 
 {{< figure src="pubmed_ai_publications.png" width="700px" caption="Number of AI-related publications by year according to PubMed together with exponential fit. Own creation with data linked below." >}}
 

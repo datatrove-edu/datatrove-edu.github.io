@@ -2,8 +2,9 @@
 title: "Las Vegas Growth"
 date: 2026-06-04
 type: "entry"
-banner: "2015_LasVegas_LandCover.png" 
-# banner_ref: "Image from London Datastore at [data.london.gov.uk](https://data.london.gov.uk/dataset/london-atmospheric-emissions-inventory-laei-2022-2lg5g/). " 
+banner: "lasVegasBanner.jpg" 
+# banner: "2015_LasVegas_LandCover.png" 
+banner_ref: "Image generated with Nano Banana 2 Lite, 2026. " 
 # math_topics: ["Riemann sums for 2 variable functions"]
 topics: ["Urbanization", "Population"]
 tags: ["Las Vegas"]

@@ -16,7 +16,6 @@ Maps displaying how the urban area land cover has grown every. Snapshots every 5
 
 {{< figure src="LasVegas_LandCover_Animation.gif" width="600px" caption="Las Vegas urban area land cover. Animation created from images from the Earth Resources Observation and Science (EROS) Center available at [eros.usgs.gov](https://eros.usgs.gov/earthshots/land-cover-maps)." >}}
 
-
 This is the color legend for the maps:
 
 | Color    | Land Cover | Description |
@@ -33,3 +32,5 @@ This is the color legend for the maps:
 *  [zip file](Earthshots-LandCoverMaps.zip) with images every 5 years, originally obtained from [eros.usgs.gov](https://eros.usgs.gov/earthshots/land-cover-maps) site. Date accessed: 5 June 2026.
 
 
+**Scale of the images:**
+Each image is approximately 48 miles wide. (Estimated by georeferencing landmarks such as Lake Las Vegas, Hoover Dam and Boulder City, since the images have no scale data.)

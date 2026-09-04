@@ -41,12 +41,15 @@ For a plot with other causes of death, see the [Scientific American Article](htt
 ## Cleaned up data
 The cause-specific data comes from *National Center for Health Statistics. Weekly Counts of Death by Jurisdiction and Select Causes of Death*, accessed on February 26, 2026, available from the CDC site https://data.cdc.gov/d/u6jv-9ijr. The aggregate all-cause weekly totals come from *National Center for Health Statistics. Excess Deaths Associated with COVID-19*, accessed on June 16, 2026, available from https://data.cdc.gov/d/xkkf-xrst.
 
-*  [US data for weekly deaths (aggregate of all causes)](us_weekly_all_cause_deaths.csv). Filtered from the CDC "Excess Deaths Associated with COVID-19" dataset (see Sources). Weighted counts, which correct the most recent weeks for reporting delays and so drop the falling tail visible in the plots above. Raw counts are in the [unweighted version](us_weekly_all_cause_deaths_unweighted.csv).
-*  [US data for heart related or cancer deaths only](us_weekly_cancer_and_heart_data_only.csv). Built from the raw CDC data; weighted counts that correct the most recent weeks for reporting delays. It combines "Heart failure" and "Ischemic heart disease" into one group (Heart) and relabels "Malignant neoplasms" into "Cancer". The plots above use the [unweighted version](us_weekly_cancer_and_heart_data_only_unweighted.csv), so they won't match this file at the right edge.
-*  [US data only](weekly_deaths_united_states_only.csv). Filtered and organized from the raw CDC data.
+*  [US data for weekly deaths (aggregate of all causes)](us_weekly_all_cause_deaths.csv).  
+   Filtered from the CDC "Excess Deaths Associated with COVID-19" dataset (see Sources). These are the weighted counts, which correct the most recent weeks for reporting delays. For raw counts, use the [unweighted version](us_weekly_all_cause_deaths_unweighted.csv), which display the falling tail in the plots above. 
+*  [US data for heart related or cancer deaths only](us_weekly_cancer_and_heart_data_only.csv).  
+   Combines "Heart failure" and "Ischemic heart disease" into one group (Heart) and relabels "Malignant neoplasms" into "Cancer". These are weighted counts that correct the most recent weeks for reporting delays. The plots above use the [unweighted version](us_weekly_cancer_and_heart_data_only_unweighted.csv).
+*  [Complete US data](weekly_deaths_united_states_only.csv).  
+   Filtered and organized from the raw CDC data.
 
 
 ## Sources
 *  Official source for the all-cause raw data: [CDC "Excess Deaths Associated with COVID-19" dataset](https://data.cdc.gov/NCHS/Excess-Deaths-Associated-with-COVID-19/xkkf-xrst/about_data).
 *  [Scientific American Article](https://www.scientificamerican.com/article/covid-is-on-track-to-become-the-u-s-s-leading-cause-of-death-yet-again1/) with a nice graph.
-*  Official source for the cause-specific raw data: [CDC source of the data](https://data.cdc.gov/National-Center-for-Health-Statistics/Weekly-Counts-of-Death-by-Jurisdiction-and-Select-/u6jv-9ijr/about_data) (large 80MB csv file). **Warning:** this dataset only covers a handful of *select* causes of death (Alzheimer's, circulatory diseases, cancer, respiratory diseases, diabetes, renal failure, and sepsis) — it does **not** contain all causes of death, so its totals fall well short of true all-cause mortality.
+*  Official source for the cause-specific raw data: [CDC source of the data](https://data.cdc.gov/National-Center-for-Health-Statistics/Weekly-Counts-of-Death-by-Jurisdiction-and-Select-/u6jv-9ijr/about_data) (large 80MB csv file). **Warning:** this dataset only covers a handful of *select* causes of death (Alzheimer's, circulatory diseases, cancer, respiratory diseases, diabetes, renal failure, and sepsis). It does **not** contain all causes of death, so its totals art considerably lower than all-cause mortality.
